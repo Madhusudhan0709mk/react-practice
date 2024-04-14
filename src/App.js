@@ -6,6 +6,8 @@ import Fruits from './components/Fruits';
 import Demo from './components/Demo';
 import Multiple from './components/Multiple';
 import Cond from './components/Cond';
+import Maplists from './components/Maplists';
+import Colorpicker from './components/Colorpicker';
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
       <Route path="multiple" element={ <Multiple />} />
       <Route path="demo" element={ <Demo />} />
       <Route path="conditional" element={ <Cond />} />
+      <Route path="map-practice" element={ <Maplists />} />
+      <Route path="colorpicker-practice-usestate-onChange" element={ <Colorpicker />} />
     </Routes>
   </BrowserRouter>
     </>

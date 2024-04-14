@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import image from '../assets/form.png'
 export const Form = () => {
     const [user,usertext] = useState('')
     const [pass,passtext] = useState('')
@@ -33,6 +33,10 @@ export const Form = () => {
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     </div>
+    <figure className="figure">
+      <img src={image} className="figure-img img-fluid rounded" alt="Map" />
+      <figcaption className="figure-caption">Image of code</figcaption>
+    </figure>
 </>
   )
 }

@@ -30,23 +30,24 @@ export default function Fruits() {
     }
   return (
     <> 
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     {objects.map((value)=>{
     return <ol>{value.name}is a price of{value.price} and {value.price} </ol>
     })}
-    <button onClick={sayHello}>click me</button><br></br><br></br>
-    <button onClick={Increment}>increment</button>
-    
-    <br></br><br></br>
-    <button onClick={Decrement}>decrement</button>
-   
-    <br></br><br></br>
-    <button onClick={seting}>click me</button>
+    <button onClick={sayHello} class="btn btn-primary">click me</button>clik to see alert box
+    <br></br>
+    <h2>First increment or decrement Factor then you can use to increse the number by factor</h2>
+    <button onClick={Increment} class="btn btn-secondary">increment</button>
+    <button onClick={Decrement} class="btn btn-danger">decrement</button>
+    <button onClick={seting} class="btn btn-success">click me</button>
     Result of setting value:{count}
     <br></br>
-    <button onClick={factorIncrement}>factor increment</button>
-    <button onClick={factorDecrement}>factor decrement</button>
-    result of factor:
-    {factor}
+    <button onClick={factorIncrement} class="btn btn-warning">factor increment</button>
+    <button onClick={factorDecrement} class="btn btn-warning">factor decrement</button>
+    result of factor:{factor}
     </>
   )
 }
