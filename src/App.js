@@ -5,6 +5,7 @@ import Form from './components/Form';
 import Fruits from './components/Fruits';
 import Demo from './components/Demo';
 import Multiple from './components/Multiple';
+import Cond from './components/Cond';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
 
       <Route path="multiple" element={ <Multiple />} />
       <Route path="demo" element={ <Demo />} />
+      <Route path="conditional" element={ <Cond />} />
     </Routes>
   </BrowserRouter>
     </>
